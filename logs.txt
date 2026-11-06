@@ -1,0 +1,213 @@
+make[1]: Entering directory '/home/gon/kernel-ocd/out'
+  CHK     include/config/kernel.release
+  GEN     ./Makefile
+  CHK     include/generated/uapi/linux/version.h
+  CHK     include/generated/utsrelease.h
+  Using .. as source for kernel
+  CHK     scripts/mod/devicetable-offsets.h
+  CHK     include/generated/timeconst.h
+  CHK     include/generated/bounds.h
+  CHK     include/generated/asm-offsets.h
+  CALL    ../scripts/checksyscalls.sh
+  CC      init/main.o
+-- KernelSU-Next version: 33281
+-- KernelSU-Next tag: v3.2.0
+-- KernelSU-Next Manager signature size: 0x3e6
+-- KernelSU-Next Manager signature hash: 79e590113c4c4c0c222978e413a5faa801666957b1212a328e46c00c69821bf7
+-- KernelSU-Next: Hook mode: Manual
+  HOSTCC  usr/gen_init_cpio
+  CHK     include/generated/compile.h
+  UPD     include/generated/compile.h
+
+-- SUSFS_VERSION: v2.1.0
+  CC      arch/arm64/kernel/debug-monitors.o
+  CC      arch/arm64/mm/dma-mapping.o
+  CC      init/do_mounts.o
+  GEN     usr/initramfs_data.cpio
+  AS      arch/arm64/kernel/entry.o
+  AS      usr/initramfs_data.o
+  AR      usr/built-in.a
+  CC      arch/arm64/mm/extable.o
+  CC      arch/arm64/kernel/irq.o
+  CC      init/do_mounts_rd.o
+  CC      arch/arm64/net/bpf_jit_comp.o
+  CC      arch/arm64/kernel/fpsimd.o
+  CC      init/do_mounts_initrd.o
+  CC      arch/arm64/mm/fault.o
+  CC      arch/arm64/crypto/sha1-ce-glue.o
+  AS      arch/arm64/kernel/entry-fpsimd.o
+  CC      arch/arm64/kernel/process.o
+  AS      arch/arm64/crypto/sha1-ce-core.o
+  CC      init/do_mounts_dm.o
+  CC      arch/arm64/mm/init.o
+  AR      arch/arm64/net/built-in.a
+  CC      arch/arm64/kernel/ptrace.o
+  CC      kernel/fork.o
+  CC      certs/system_keyring.o
+  CC      arch/arm64/crypto/sha2-ce-glue.o
+  EXTRACT_CERTS   
+Generating X.509 key generation config
+###
+### Now generating an X.509 key pair to be used for signing modules.
+###
+### If this takes a long time, you might wish to run rngd in the
+### background to keep the supply of entropy topped up.  It
+### needs to be run as root, and uses a hardware random
+### number generator if one is available.
+###
+.+.........+.+..+.+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*.+.....+.........+......+....+.....+.......+.....+...+.+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*........+......  CC      init/noinitramfs.o
+...+..+....+.........+......+..+.........+.+..+.+.....+.......+........+.......+.........+  AS      arch/arm64/crypto/sha2-ce-core.o
+...+...+...+.....+....+............+....  CC      arch/arm64/crypto/ghash-ce-glue.o
+....+...+  AS      arch/arm64/mm/cache.o
+.............+...........+.........+......+++++++++++++  CC      arch/arm64/mm/copypage.o
++++++++++++++++++++  CC      arch/arm64/kernel/setup.o
+++++++++++++++++++  CC      mm/filemap.o
++++++++++++++++
+..+.+...+..+...+......+................+.....+.............+......+...........+...+.+......+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*....+..+.+.....+...+.......+..+.......+........+.......+...........+....+.........+.....+.+........+.+..+...............+...+....+..+.+.....+..........+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*.........+................+...+..+...+.+.....................+.....+.......+...+........+.......+.....+...+......+...................+..+  CC      init/initramfs.o
+.......+........+...+.........+................+......+.....+......+....+........................+.........+..........................+.+......+.........+........+.......+......+.........+..............+.........+..........+...........+............+....  CC      arch/arm64/mm/flush.o
++.........+......+.....+....+++++++++++++++++++++  AS      arch/arm64/crypto/ghash-ce-core.o
+++++++++++++++++++++++  AS      arch/arm64/crypto/aes-ce-core.o
+++++++++++++++++  CC      arch/arm64/crypto/aes-ce-glue.o
+++++++
+-----
+###
+### Key pair generated.
+###
+  EXTRACT_CERTS   certs/signing_key.pem
+  AS      certs/system_certificates.o
+  CC      arch/arm64/kernel/signal.o
+  AR      certs/built-in.a
+  CC      mm/mempool.o
+  CC      init/calibrate.o
+  CC      arch/arm64/mm/ioremap.o
+  CC      kernel/exec_domain.o
+  CC      init/init_task.o
+  CC      arch/arm64/crypto/aes-ce-ccm-glue.o
+  CC      kernel/panic.o
+  CC      arch/arm64/mm/mmap.o
+  CC      mm/oom_kill.o
+  AS      arch/arm64/crypto/aes-ce-ccm-core.o
+  CC      init/version.o
+  CC      arch/arm64/crypto/aes-glue-ce.o
+  AR      init/mounts.o
+  CC      mm/maccess.o
+  CC      arch/arm64/kernel/sys.o
+  CC      arch/arm64/mm/pgd.o
+  AR      init/built-in.a
+  AS      arch/arm64/crypto/aes-ce.o
+  CC      arch/arm64/kernel/stacktrace.o
+  CC      arch/arm64/mm/mmu.o
+  CC      arch/arm64/mm/context.o
+  CC      arch/arm64/crypto/aes-glue-neon.o
+  CC      kernel/cpu.o
+  AS      arch/arm64/mm/proc.o
+  CC      mm/page_alloc.o
+  CC      arch/arm64/kernel/time.o
+  CC      fs/open.o
+  CC      arch/arm64/mm/pageattr.o
+  AS      arch/arm64/crypto/aes-neon.o
+  CC      arch/arm64/crypto/sha256-glue.o
+  CC      fs/read_write.o
+  CC      arch/arm64/kernel/traps.o
+  AR      arch/arm64/mm/built-in.a
+  CC      kernel/exit.o
+  AR      ipc/built-in.a
+  CC      mm/page-writeback.o
+  SHIPPED arch/arm64/crypto/sha256-core.S
+  AS      arch/arm64/crypto/aes-cipher-core.o
+  CC      security/integrity/iint.o
+  CC      arch/arm64/crypto/aes-cipher-glue.o
+  CC      arch/arm64/kernel/io.o
+  CC      arch/arm64/kernel/vdso.o
+  CC      security/integrity/integrity_audit.o
+  AR      arch/arm64/crypto/sha1-ce.o
+  AR      arch/arm64/crypto/sha2-ce.o
+  AR      arch/arm64/crypto/ghash-ce.o
+  AR      arch/arm64/crypto/aes-ce-cipher.o
+  AR      arch/arm64/crypto/aes-ce-ccm.o
+  AR      arch/arm64/crypto/aes-ce-blk.o
+  AR      arch/arm64/crypto/aes-neon-blk.o
+  AS      arch/arm64/crypto/sha256-core.o
+  CC      fs/file_table.o
+  AR      arch/arm64/crypto/aes-arm64.o
+  AR      arch/arm64/crypto/sha256-arm64.o
+  AR      arch/arm64/crypto/built-in.a
+  CC      security/keys/gc.o
+  AS      arch/arm64/kernel/hyp-stub.o
+  AR      security/integrity/integrity.o
+  AR      security/integrity/built-in.a
+  CC      fs/super.o
+  CC      arch/arm64/kernel/psci.o
+  CC      crypto/api.o
+  CC      security/keys/key.o
+  CC      kernel/softirq.o
+  CC      arch/arm64/kernel/cpu_ops.o
+  CC      arch/arm64/kernel/insn.o
+  CC      mm/readahead.o
+  CC      security/keys/keyring.o
+  CC      block/bio.o
+  CC      crypto/cipher.o
+  CC      fs/char_dev.o
+  CC      arch/arm64/kernel/return_address.o
+  CC      kernel/resource.o
+  CC      crypto/compress.o
+  CC      mm/swap.o
+  CC      arch/arm64/kernel/cpuinfo.o
+  GEN     security/selinux/flask.h security/selinux/av_permissions.h
+  CC      security/selinux/avc.o
+  CC      security/keys/keyctl.o
+  CC      fs/stat.o
+  CC      crypto/memneq.o
+  CC      arch/arm64/kernel/cpu_errata.o
+  CC      kernel/sysctl.o
+  CC      block/elevator.o
+  CC      security/keys/permission.o
+  CC      crypto/crypto_wq.o
+  CC      security/selinux/hooks.o
+  CC      arch/arm64/kernel/cpufeature.o
+  CC      fs/exec.o
+  CC      mm/truncate.o
+  CC      security/keys/process_keys.o
+  CC      crypto/crypto_engine.o
+  CC      block/blk-core.o
+  CC      arch/arm64/kernel/alternative.o
+  CC      security/keys/request_key.o
+  CC      mm/vmscan.o
+  CC      kernel/sysctl_binary.o
+  CC      crypto/algapi.o
+  CC      arch/arm64/kernel/cacheinfo.o
+  CC      fs/pipe.o
+  CC      security/keys/request_key_auth.o
+  CC      arch/arm64/kernel/smp.o
+  CC      kernel/capability.o
+  CC      security/selinux/selinuxfs.o
+  CC      security/keys/user_defined.o
+  CC      crypto/scatterwalk.o
+  CC      arch/arm64/kernel/smp_spin_table.o
+  CC      security/keys/compat.o
+  CC      fs/namei.o
+  CC      kernel/ptrace.o
+  CC      block/blk-tag.o
+  CC      crypto/proc.o
+  CC      arch/arm64/kernel/topology.o
+  CC      security/keys/proc.o
+  CC      security/selinux/netlink.o
+  CC      mm/shmem.o
+  CC      crypto/aead.o
+  AS      arch/arm64/kernel/smccc-call.o
+  CC      security/keys/sysctl.o
+  CC      arch/arm64/kernel/sys32.o
+  CC      block/blk-sysfs.o
+  CC      security/selinux/nlmsgtab.o
+  CC      kernel/user.o
+  AR      security/keys/built-in.a
+  CC      security/commoncap.o
+  AS      arch/arm64/kernel/kuser32.o
+  CC      arch/arm64/kernel/signal32.o
+  CC      kernel/signal.o
+  CC      block/blk-flush.o
+  CC      security/selinux/netif.o
+  CC      crypto/ablkcipher.o
+  CC      fs/fcntl.o
+  CC      security/min_addr.o
+  CC      mm/util.o

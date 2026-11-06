@@ -38,7 +38,7 @@ export CC=$HOME/toolchains/boolx-clang/bin/clang
 export LC_ALL=C
 export USE_CCACHE=1
 export CCACHE_EXEC=$(command -v ccache)
-export THINLTO_CACHE_DIR=/home/onettboots/toolchains/thincache
+export THINLTO_CACHE_DIR=$HOME/toolchains/thincache
 #export CCACHE_DIR="$HOME/toolchains/boolx_ccache" #localbuild
 ccache -M 10G
 
@@ -48,11 +48,11 @@ cpus=`expr $(nproc --all)`
 objdir="${KERNEL_DIR}/out"
 CONFIGS="raphael_defconfig"
 CFG=arch/arm64/configs/raphael_defconfig
-VER="V2.3-Alarabi-DSP"
+VER="V1.0-DSP"
 KERNEL_DIR=`pwd`
 REPACK_DIR=$HOME/AnyKernel3
-ZIP_MOVE=$HOME/Boolx
-BASE_AK_VER="Bool-X-Raphael-"
+ZIP_MOVE=$HOME/kernel-ocd
+BASE_AK_VER="Gon-X-Raphael-"
 DATE=`date +"%Y%m%d-%H%M"`
 AK_VER="$BASE_AK_VER$VER"
 ZIP_NAME="$AK_VER"-"$DATE"
